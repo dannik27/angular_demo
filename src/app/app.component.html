@@ -1,11 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-header></app-header>
 
-<div class="header">
+<div class="container" id="header">
+  <app-header></app-header>
+</div>
+
+
+
+<div id="main" class="container">
   <a routerLink="/map-list">to map list</a>
   <a routerLink="/map">to map</a>
 
+  <router-outlet></router-outlet>
 </div>
 
-<router-outlet></router-outlet>
+
+
+
+
+
+
+
 

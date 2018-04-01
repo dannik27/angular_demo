@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { MapComponent } from './map/map.component';
 import { MapsListComponent } from './maps-list/maps-list.component';
 import { RouterModule} from '@angular/router';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
       path: 'map',
       component: MapComponent
     }]),
-    NgbModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
